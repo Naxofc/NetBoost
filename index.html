@@ -315,12 +315,17 @@
   @media(max-width:768px){
     header { padding:0 20px; }
     nav { display:none; }
-    .hero-inner { grid-template-columns:1fr; padding:40px 20px; }
+    .hero-inner {
+      grid-template-columns:1fr;
+      padding:16px 20px 40px;
+      gap: 12px;
+    }
     .hero-photo-side { order:-1; }
-    .photo-frame { width:280px; }
+    .photo-wrap { width:100%; }
     .about-grid,.packages-grid,.para-quem-grid { grid-template-columns:1fr; }
     .container { padding:0 20px; }
     .hero-stats { gap:24px; }
+    .hero-content > div:first-child { margin-top:0; }
   }
 
   /* Hero photo side */
