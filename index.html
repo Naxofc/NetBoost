@@ -146,8 +146,9 @@
 
   .hero-inner {
     max-width:1200px; margin:0 auto; padding:60px 48px;
-    display:grid; grid-template-columns:1.1fr 0.9fr; gap:100px;
+    display:grid; grid-template-columns:1fr 1fr; gap:48px;
     align-items:center; position:relative; z-index:2; width:100%;
+    justify-items:start;
   }
   .hero-label {
     font-family:'Orbitron',sans-serif; font-size:0.62rem;
@@ -164,7 +165,7 @@
   .hero-ctas { display:flex; gap:14px; flex-wrap:wrap; }
 
   /* Photo side */
-  .hero-photo-side { display:flex; flex-direction:column; justify-content:flex-end; align-items:center; position:relative; }
+  .hero-photo-side { display:flex; flex-direction:column; justify-content:flex-end; align-items:flex-start; position:relative; }
   .photo-frame {
     position:relative; width:360px; max-width:100%;
     border-radius:12px; overflow:hidden;
@@ -332,7 +333,7 @@
       padding:16px 20px 40px;
       gap: 12px;
     }
-    .hero-photo-side { order:-1; }
+    .hero-photo-side { order:-1; transform:none; }
     .photo-wrap { width:100%; }
     .about-grid,.packages-grid,.para-quem-grid { grid-template-columns:1fr; }
     .container { padding:0 20px; }
@@ -347,12 +348,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    transform: translateX(-180px);
   }
 
   /* Foto do Tiago com fundo preto + gradiente azul atrás */
   .photo-wrap {
     position: relative;
-    width: 340px;
+    width: 300px;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -503,24 +505,20 @@
     <!-- TEXTO ESQUERDO -->
     <div class="hero-content">
       <div style="background:rgba(26,115,232,0.08);border:1px solid rgba(26,115,232,0.2);border-radius:8px;padding:10px 16px;display:inline-block;margin-bottom:20px;">
-        <span class="hero-label" style="margin:0;">Gestão de Tráfego &bull; Facebook Ads &bull; Google Ads</span>
+        <span class="hero-label" style="margin:0;">Marketing &bull; Facebook Ads &bull; Google Ads</span>
       </div>
       <h2 class="hero-question grad-text">Conheça a Netboost</h2>
       <h1 class="hero-name">Olá, sou o<br><span class="grad-text">Tiago Melo</span></h1>
       <p class="hero-desc">
-        Sou fundador da <strong>Netboost</strong> e especialista em <strong>Facebook Ads</strong> e <strong>Google Ads</strong>. Minha missão é clara: transformar investimento em anúncios em crescimento real, mais clientes, mais pedidos, mais faturamento para o seu negócio.
+        Sou fundador da <strong>Netboost</strong> e especialista em <strong>Facebook Ads</strong> e <strong>Google Ads</strong>. Nossa missão é clara: transformar os seus anúncios na internet em uma máquina de vendas. Mais clientes para o seu negócio, mais vendas, e mais lucro.
         <br><br>
-        Gerenciei campanhas para empresas como <strong>Choperia do Lugui Macapá</strong> e <strong>Mineirão Steak House</strong>, acumulando mais de <strong>50 negócios impactados</strong> com resultados consistentes e mensuráveis.
+        Já gerenciamos campanhas de várias empresas de forma inteligente. Elaboramos estratégias para levar o novo cliente do anúncio até a venda.
       </p>
-      <div class="hero-stats">
-        <div class="stat-item"><span class="stat-num grad-text">+50</span><span class="stat-label">Empresas Impactadas</span></div>
-        <div class="stat-item"><span class="stat-num grad-text">100%</span><span class="stat-label">Foco em Resultados</span></div>
-        <div class="stat-item"><span class="stat-num grad-text">5★</span><span class="stat-label">Avaliação Média</span></div>
-      </div>
       <div class="hero-ctas">
         <a href="https://wa.me/5596984342166?text=Quero%20alavancar%20meu%20neg%C3%B3cio%20com%20a%20Netboost!" class="btn-glow" target="_blank">🚀 Alavancar Meu Negócio</a>
-        <a href="#pacotes" class="btn-outline">Ver Pacotes</a>
+        <a href="#pacotes" class="btn-outline">Ver Serviços</a>
       </div>
+    </div>
     </div>
 
     <!-- FOTO TIAGO -->
@@ -546,11 +544,9 @@
   <div class="container">
     <p class="band-label">Marcas que já aceleraram com a Netboost</p>
     <div class="clients-row">
-      <span class="client-name">Choperia do Lugui</span>
-      <span class="client-name">Mineirão Steak</span>
-      <span class="client-name">Sabor &amp; Arte</span>
-      <span class="client-name">Grill House</span>
-      <span class="client-name">Burger Prime</span>
+      <span class="client-name">Choperia do Lugui Macapá</span>
+      <span class="client-name">Churrascaria Mineirão Steak</span>
+      <span class="client-name">Arena AK Play</span>
     </div>
   </div>
 </div>
@@ -562,27 +558,27 @@
       <div>
         <span class="section-label">Sobre a Netboost</span>
         <h2 class="section-title">Por que escolher a <span class="grad-text">Netboost</span>?</h2>
-        <p class="section-sub">Não somos uma agência genérica. Seguimos uma metodologia consolidada em 3 pilares que garante resultados reais para o seu negócio. Escolher a Netboost é o caminho certo para alavancar a sua empresa.</p>
+        <p class="section-sub">A Netboost é a melhor escolha pois seguimos uma metodologia consolidada em 3 pilares que garantem resultado para a sua operação:</p>
         <div class="about-features">
           <div class="about-feat">
             <div class="feat-icon">🎯</div>
             <div class="feat-text">
               <h4>Identificação do Público Ideal</h4>
-              <p>Encontramos exatamente quem está pronto para comprar o seu produto ou serviço, maximizando cada real investido em tráfego pago.</p>
+              <p>Encontramos exatamente quem está interessado no seu produto ou serviço, fazendo com que o número de clientes aumente exponencialmente.</p>
             </div>
           </div>
           <div class="about-feat">
             <div class="feat-icon">📊</div>
             <div class="feat-text">
               <h4>Remarketing Estratégico</h4>
-              <p>Reconquistamos os clientes que já demonstraram interesse no seu negócio, aumentando a taxa de conversão e reduzindo o custo por aquisição.</p>
+              <p>Fazemos campanhas de remarketing para as pessoas que já demonstraram interesse no seu negócio, maximizando cada real investido em anúncio e reduzindo o custo por aquisição de clientes.</p>
             </div>
           </div>
           <div class="about-feat">
             <div class="feat-icon">🚀</div>
             <div class="feat-text">
-              <h4>Crescimento Previsível e Escalável</h4>
-              <p>Um sistema de aquisição de clientes que cresce junto com o seu negócio, mês após mês.</p>
+              <h4>Trackeamento de Métricas</h4>
+              <p>Trackeamento eficiente de métricas para aumentar a eficiência dos anúncios e planejarmos o seu crescimento.</p>
             </div>
           </div>
         </div>
@@ -591,9 +587,9 @@
       <div class="about-visual">
         <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(26,115,232,0.1) 0%,rgba(13,71,161,0.2) 100%);"></div>
         <div class="metrics-grid">
-          <div class="metric-card"><span class="metric-num grad-text">+200k</span><span class="metric-label">Investidos em tráfego</span></div>
-          <div class="metric-card"><span class="metric-num grad-text">+50</span><span class="metric-label">Empresas Impactadas</span></div>
-          <div class="metric-card"><span class="metric-num grad-text">R$10M+</span><span class="metric-label">Em receita gerada</span></div>
+          <div class="metric-card"><span class="metric-num grad-text">+500k</span><span class="metric-label">Investidos em tráfego</span></div>
+          <div class="metric-card"><span class="metric-num grad-text">+20</span><span class="metric-label">Empresas Gerenciadas</span></div>
+          <div class="metric-card"><span class="metric-num grad-text">2+</span><span class="metric-label">Anos de experiência</span></div>
           <div class="metric-card"><span class="metric-num grad-text">5★</span><span class="metric-label">Satisfação dos clientes</span></div>
         </div>
       </div>
@@ -605,97 +601,61 @@
 <section id="pacotes">
   <div class="container">
     <div class="packages-header">
-      <span class="section-label">Nossos Pacotes</span>
-      <h2 class="section-title">Escolha o plano ideal <span class="grad-text">para o seu negócio</span></h2>
-      <p class="section-sub">Metodologia versátil: todos os planos se encaixam no momento atual do seu negócio.</p>
+      <span class="section-label">Nossos Serviços</span>
+      <h2 class="section-title">Temos o serviço ideal <span class="grad-text">para o seu negócio</span></h2>
+      <p class="section-sub">Metodologia versátil: Criamos a estratégia, os criativos, e gerenciamos as campanhas.</p>
     </div>
     <div class="packages-grid">
 
       <!-- PACOTE 1: ESSENCIAL -->
       <div class="package-card">
-        <span class="pkg-tag">Meta Ads</span><span class="pkg-tag">Planejamento Estratégico</span>
-        <br>
         <span class="pkg-badge" style="margin-top:10px;">Mais Popular</span>
-        <h3 class="pkg-title">Plano Essencial</h3>
-        <p class="pkg-subtitle">Ideal para quem quer entrar no jogo do tráfego pago com estrutura sólida e resultados reais desde o primeiro mês.</p>
+        <h3 class="pkg-title">Gestão de Tráfego</h3>
+        <p class="pkg-subtitle">Ideal para quem quer utilizar todo o potencial do Meta e Google Ads para fazer anúncios e faturar mais.</p>
         <p class="pkg-section-label">O que está incluído</p>
         <ul class="pkg-features">
-          <li>Gestão completa de Meta Ads (Facebook + Instagram)</li>
-          <li>Criação e otimização de campanhas mensais</li>
-          <li>Planejamento estratégico de calendário mensal</li>
-          <li>Relatório semanal de desempenho</li>
-          <li>Segmentação avançada do público-alvo</li>
-          <li>Criativos e copies para os anúncios</li>
-          <li>Suporte via WhatsApp em horário comercial</li>
+          <li>Gestão do Meta Ads (Facebook + Instagram)</li>
+          <li>Gestão do Google Ads</li>
+          <li>Relatório de desempenho semanal/mensal</li>
+          <li>Planejamento estratégico de produtos</li>
+          <li>Suporte diário no WhatsApp</li>
         </ul>
-        <div class="pkg-bonus">
-          <p class="pkg-bonus-label">Bônus Inclusos</p>
-          <ul>
-            <li>Diagnóstico gratuito do seu perfil digital</li>
-            <li>Calendário de conteúdo do mês</li>
-          </ul>
-        </div>
-        <a href="https://wa.me/5596984342166?text=Quero%20saber%20mais%20sobre%20o%20Plano%20Essencial!" class="btn-glow-sm" target="_blank">Quero o Plano Essencial</a>
+        
+        <a href="https://wa.me/5596984342166?text=Quero%20saber%20mais%20sobre%20o%20Plano%20Essencial!" class="btn-glow-sm" target="_blank">Quero a Gestão de Tráfego</a>
         <a href="https://wa.me/5596984342166?text=Quero%20saber%20mais%20sobre%20o%20Plano%20Essencial!" class="btn-saiba" target="_blank">Saiba mais</a>
       </div>
 
       <!-- PACOTE 2: VÍDEOS -->
       <div class="package-card featured">
-        <span class="pkg-tag">Produção de Conteúdo</span><span class="pkg-tag">4 a 8 Vídeos</span>
-        <br>
         <span class="pkg-badge" style="margin-top:10px;">Alto Impacto</span>
-        <h3 class="pkg-title">Pacote de Vídeos</h3>
-        <p class="pkg-subtitle">De 4 a 8 vídeos por mês, com demanda ajustada de acordo com a necessidade e o momento do seu negócio. Conteúdo que vende.</p>
+        <h3 class="pkg-title">Produção de Vídeos</h3>
+        <p class="pkg-subtitle">Produção de vídeos sob demanda, ajustada de acordo com a necessidade e o momento do seu negócio.</p>
         <p class="pkg-section-label">O que está incluído</p>
         <ul class="pkg-features">
-          <li>Produção de 4 a 8 vídeos mensais sob demanda</li>
+          <li>Produção de vídeos sob demanda</li>
           <li>Roteiro, captação e edição profissional</li>
-          <li>Planejamento estratégico de calendário de conteúdo</li>
-          <li>Vídeos otimizados para Reels, Stories e anúncios</li>
-          <li>Copies e legendas persuasivas para cada vídeo</li>
-          <li>Entrega adaptada ao ritmo do seu negócio</li>
-          <li>Metodologia versátil: escala conforme sua demanda</li>
-          <li>Suporte prioritário 7 dias por semana</li>
+          <li>Modelos (Pessoas) para os vídeos</li>
+          <li>Postagens dos vídeos e legendas feitas pela Netboost</li>
         </ul>
-        <div class="pkg-bonus">
-          <p class="pkg-bonus-label">Bônus Exclusivos</p>
-          <ul>
-            <li>Análise de perfil e posicionamento visual</li>
-            <li>Reunião mensal de alinhamento estratégico</li>
-            <li>Adaptação de formatos para múltiplas plataformas</li>
-          </ul>
-        </div>
-        <a href="https://wa.me/5596984342166?text=Quero%20saber%20mais%20sobre%20o%20Pacote%20de%20V%C3%ADdeos!" class="btn-glow-sm" target="_blank">Quero o Pacote de Vídeos</a>
+        
+        <a href="https://wa.me/5596984342166?text=Quero%20saber%20mais%20sobre%20o%20Pacote%20de%20V%C3%ADdeos!" class="btn-glow-sm" target="_blank">Quero a Produção de Vídeos</a>
         <a href="https://wa.me/5596984342166?text=Quero%20saber%20mais%20sobre%20o%20Pacote%20de%20V%C3%ADdeos!" class="btn-saiba" target="_blank">Saiba mais</a>
       </div>
 
       <!-- PACOTE 3: FLYERS -->
       <div class="package-card">
-        <span class="pkg-tag">Design Gráfico</span><span class="pkg-tag">10 a 30 Flyers</span>
-        <br>
         <span class="pkg-badge" style="margin-top:10px;">Novo</span>
-        <h3 class="pkg-title">Pacote de Flyers</h3>
-        <p class="pkg-subtitle">De 10 a 30 flyers mensais com design profissional e identidade visual consistente. Conteúdo visual que atrai, comunica e converte.</p>
+        <h3 class="pkg-title">Produção de Flyers</h3>
+        <p class="pkg-subtitle">Produção de flyers sob demanda, ajustada de acordo com a necessidade e o momento do seu negócio.</p>
         <p class="pkg-section-label">O que está incluído</p>
         <ul class="pkg-features">
-          <li>Criação de 10 a 30 flyers mensais sob demanda</li>
-          <li>Planejamento estratégico de calendário de publicações</li>
-          <li>Design com identidade visual da sua marca</li>
-          <li>Artes para Feed, Stories e WhatsApp</li>
-          <li>Revisões e ajustes inclusos</li>
-          <li>Entrega nos formatos PNG, JPG e PDF</li>
-          <li>Copies e chamadas persuasivas em cada peça</li>
-          <li>Adaptação de tamanhos para múltiplas plataformas</li>
+          <li>Produção de flyers</li>
+          <li>Copy e edição profissional</li>
+          <li>Formato Stories e Feed</li>
+          <li>Postagens dos flyers e legendas feitas pela Netboost</li>
         </ul>
-        <div class="pkg-bonus">
-          <p class="pkg-bonus-label">Bônus Inclusos</p>
-          <ul>
-            <li>Paleta de cores e tipografia personalizadas</li>
-            <li>Calendário visual do mês organizado</li>
-            <li>Suporte para ajustes de última hora</li>
-          </ul>
-        </div>
-        <a href="https://wa.me/5596984342166?text=Quero%20saber%20mais%20sobre%20o%20Pacote%20de%20Flyers!" class="btn-glow-sm" target="_blank">Quero o Pacote de Flyers</a>
+        
+        <a href="https://wa.me/5596984342166?text=Quero%20saber%20mais%20sobre%20o%20Pacote%20de%20Flyers!" class="btn-glow-sm" target="_blank">Quero a Produção de Flyers</a>
         <a href="https://wa.me/5596984342166?text=Quero%20saber%20mais%20sobre%20o%20Pacote%20de%20Flyers!" class="btn-saiba" target="_blank">Saiba mais</a>
       </div>
 
@@ -712,97 +672,12 @@
 <div class="cta-strip" id="cta">
   <div class="container">
     <span class="section-label" style="display:block;text-align:center;margin-bottom:12px;">É Agora ou Nunca</span>
-    <h2 style="font-size:clamp(1.5rem,3vw,2.2rem);font-weight:800;margin-bottom:16px;">Pronto para lotar seu empresa?</h2>
+    <h2 style="font-size:clamp(1.5rem,3vw,2.2rem);font-weight:800;margin-bottom:16px;">Pronto para alavancar sua empresa?</h2>
     <p style="color:rgba(255,255,255,0.65);margin-bottom:28px;font-size:1rem;">Fale agora com o Tiago e receba uma análise gratuita do seu negócio.</p>
     <a href="https://wa.me/5596984342166?text=Quero%20uma%20an%C3%A1lise%20gratuita%20do%20meu%20neg%C3%B3cio!" class="btn-glow" target="_blank">📲 Falar com Tiago Agora</a>
   </div>
 </div>
 
-<!-- DEPOIMENTOS -->
-<section id="depoimentos" style="background:var(--dark-2);">
-  <div class="container">
-    <span class="section-label">Prova Social</span>
-    <h2 class="section-title">O que dizem <span class="grad-text">nossos clientes</span></h2>
-    <a href="https://wa.me/5596984342166?text=Quero%20fazer%20parte%20dos%20casos%20de%20sucesso%20da%20Netboost!" class="btn-saiba" target="_blank">Quero ser o próximo caso de sucesso</a>
-  </div>
-  <div class="carousel-wrapper">
-    <div class="carousel-track">
-      <div class="testimonial-card"><div class="test-stars">★★★★★</div><p class="test-text">"Em 2 meses nosso delivery triplicou. O Tiago entende o mercado de empresas como ninguém."</p><div class="test-author"><div class="test-avatar">R</div><div><div class="test-name">Rafael Costa</div><div class="test-biz">Choperia do Lugui</div></div></div></div>
-      <div class="testimonial-card"><div class="test-stars">★★★★★</div><p class="test-text">"Antes eu jogava dinheiro fora em anúncios. Hoje cada real investido volta multiplicado. A Netboost mudou meu negócio."</p><div class="test-author"><div class="test-avatar">M</div><div><div class="test-name">Marcos Silva</div><div class="test-biz">Mineirão Steak</div></div></div></div>
-      <div class="testimonial-card"><div class="test-stars">★★★★★</div><p class="test-text">"Profissionalismo do início ao fim. Lotamos o empresa nas sextas e sábados graças às campanhas certeiras."</p><div class="test-author"><div class="test-avatar">A</div><div><div class="test-name">Ana Pereira</div><div class="test-biz">Sabor &amp; Arte</div></div></div></div>
-      <div class="testimonial-card"><div class="test-stars">★★★★★</div><p class="test-text">"O Tiago tem um olhar estratégico único. Em 30 dias já sentimos diferença no movimento do empresa."</p><div class="test-author"><div class="test-avatar">F</div><div><div class="test-name">Felipe Mendes</div><div class="test-biz">Grill House</div></div></div></div>
-      <div class="testimonial-card"><div class="test-stars">★★★★★</div><p class="test-text">"Recomendo sem hesitar. A expertise em empresas faz toda diferença. É um parceiro estratégico de verdade."</p><div class="test-author"><div class="test-avatar">J</div><div><div class="test-name">Juliana Nunes</div><div class="test-biz">Burger Prime</div></div></div></div>
-      <div class="testimonial-card"><div class="test-stars">★★★★★</div><p class="test-text">"Em 2 meses nosso delivery triplicou. O Tiago entende o mercado de empresas como ninguém."</p><div class="test-author"><div class="test-avatar">R</div><div><div class="test-name">Rafael Costa</div><div class="test-biz">Choperia do Lugui</div></div></div></div>
-      <div class="testimonial-card"><div class="test-stars">★★★★★</div><p class="test-text">"Antes eu jogava dinheiro fora em anúncios. Hoje cada real investido volta multiplicado. A Netboost mudou meu negócio."</p><div class="test-author"><div class="test-avatar">M</div><div><div class="test-name">Marcos Silva</div><div class="test-biz">Mineirão Steak</div></div></div></div>
-      <div class="testimonial-card"><div class="test-stars">★★★★★</div><p class="test-text">"Profissionalismo do início ao fim. Lotamos o empresa nas sextas e sábados graças às campanhas certeiras."</p><div class="test-author"><div class="test-avatar">A</div><div><div class="test-name">Ana Pereira</div><div class="test-biz">Sabor &amp; Arte</div></div></div></div>
-      <div class="testimonial-card"><div class="test-stars">★★★★★</div><p class="test-text">"O Tiago tem um olhar estratégico único. Em 30 dias já sentimos diferença no movimento do empresa."</p><div class="test-author"><div class="test-avatar">F</div><div><div class="test-name">Felipe Mendes</div><div class="test-biz">Grill House</div></div></div></div>
-      <div class="testimonial-card"><div class="test-stars">★★★★★</div><p class="test-text">"Recomendo sem hesitar. A expertise em empresas faz toda diferença. É um parceiro estratégico de verdade."</p><div class="test-author"><div class="test-avatar">J</div><div><div class="test-name">Juliana Nunes</div><div class="test-biz">Burger Prime</div></div></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- PARA QUEM -->
-<section id="para-quem" style="background:var(--dark);">
-  <div class="container">
-    <span class="section-label">Para Quem</span>
-    <h2 class="section-title">Para quem meus serviços <span class="grad-text">são indicados?</span></h2>
-    <p class="section-sub">Se você se encaixa em algum desses perfis, a Netboost foi feita para você.</p>
-    <a href="https://wa.me/5596984342166?text=Quero%20saber%20se%20a%20Netboost%20%C3%A9%20ideal%20para%20mim!" class="btn-saiba" style="margin-top:4px;" target="_blank">Saiba se a Netboost é para você</a>
-
-    <div class="para-quem-grid">
-
-      <div class="para-quem-card">
-        <span class="pq-icon">🍽️</span>
-        <h3 class="pq-title">Donos de Empresa que querem mais movimento</h3>
-        <p class="pq-text">Você tem um ótimo empresa, mas sente que o salão poderia estar mais cheio, especialmente nos dias de semana? Meu trabalho é fazer o cliente certo chegar até você, na hora certa, pelo canal certo.</p>
-        <a href="https://wa.me/5596984342166?text=Sou%20dono%20de%20empresa%20e%20quero%20mais%20movimento!" class="btn-saiba" target="_blank">Saiba mais</a>
-      </div>
-
-      <div class="para-quem-card">
-        <span class="pq-icon">📦</span>
-        <h3 class="pq-title">Negócios de Delivery que buscam escalar pedidos</h3>
-        <p class="pq-text">Delivery é volume. Se você quer aumentar o número de pedidos sem depender só dos aplicativos, o tráfego pago bem estruturado pode ser o motor que faltava para escalar o seu delivery com margem real.</p>
-        <a href="https://wa.me/5596984342166?text=Tenho%20um%20delivery%20e%20quero%20escalar%20pedidos!" class="btn-saiba" target="_blank">Saiba mais</a>
-      </div>
-
-      <div class="para-quem-card">
-        <span class="pq-icon">📍</span>
-        <h3 class="pq-title">Estabelecimentos Locais que querem dominar a região</h3>
-        <p class="pq-text">Quer ser a primeira opção que vem à cabeça quando alguém pensa em comer na sua cidade ou bairro? Com campanhas locais bem segmentadas, sua marca aparece para quem está perto e pronto para consumir.</p>
-        <a href="https://wa.me/5596984342166?text=Quero%20dominar%20minha%20regi%C3%A3o%20com%20tr%C3%A1fego%20pago!" class="btn-saiba" target="_blank">Saiba mais</a>
-      </div>
-
-      <div class="para-quem-card">
-        <span class="pq-icon">🚀</span>
-        <h3 class="pq-title">Empreendedores que estão abrindo um novo negócio negócios</h3>
-        <p class="pq-text">Abrindo um empresa, bar ou lanchonete e quer começar já com presença digital e clientes? Iniciar com uma estratégia de tráfego desde o primeiro dia garante velocidade de crescimento e reconhecimento de marca muito acima da média.</p>
-        <a href="https://wa.me/5596984342166?text=Estou%20abrindo%20um%20neg%C3%B3cio%20e%20quero%20come%C3%A7ar%20com%20tr%C3%A1fego%20pago!" class="btn-saiba" target="_blank">Saiba mais</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER CTA -->
-<div class="cta-strip">
-  <div class="container">
-    <span class="section-label" style="display:block;text-align:center;margin-bottom:12px;">Vamos conversar?</span>
-    <h2 style="font-size:clamp(1.4rem,3vw,2rem);font-weight:800;margin-bottom:16px;">Sua próxima virada começa aqui.</h2>
-    <p style="color:rgba(255,255,255,0.65);margin-bottom:28px;font-size:1rem;">Análise gratuita do seu negócio. Sem compromisso. Só resultado.</p>
-    <a href="https://wa.me/5596984342166?text=Quero%20minha%20an%C3%A1lise%20gratuita!" class="btn-glow" target="_blank">📲 Falar com Tiago no WhatsApp</a>
-  </div>
-</div>
-
-<!-- FOOTER -->
-<footer>
-  <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
-    <div>
-      <img src="data:image/png;base64,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" alt="Netboost" style="height:22px; max-width:130px; display:block; object-fit:contain; margin-bottom:8px;">
-      <div style="font-size:0.8rem;color:var(--gray);">Tráfego pago especializado em Empresas</div>
-    </div>
-    <div style="font-size:0.8rem;color:var(--gray);">© 2026 Netboost. Todos os direitos reservados.</div>
-  </div>
-</footer>
 
 <script>
   const blur = document.getElementById('scrollBlur');
@@ -812,10 +687,8 @@
     const scrollY = window.scrollY;
     const docH = document.documentElement.scrollHeight;
     const winH = window.innerHeight;
-    const footerTop = footer.getBoundingClientRect().top;
+    const footerTop = footer ? footer.getBoundingClientRect().top : winH + 999;
     
-    // Mostra blur depois de 80px de scroll
-    // Desaparece com opacidade quando footer está chegando (280px antes)
     const shouldShow = scrollY > 80;
     const nearFooter = footerTop < winH + 200;
     
@@ -833,6 +706,7 @@
   window.addEventListener('scroll', updateBlur, { passive: true });
   updateBlur();
 </script>
+
 <script>
 (function() {
   var container = document.getElementById('dotted-surface');
